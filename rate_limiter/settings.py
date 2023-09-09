@@ -132,7 +132,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://0.0.0.0:6379/1",  # Local Link provided by the redis-server command
+        "LOCATION": "redis://127.0.0.1:6379/1",  # Local Link provided by the redis-server command
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
@@ -140,4 +140,5 @@ CACHES = {
 }
 
 redis_instance = redis.StrictRedis(host='127.0.0.1', port=6379, db=1)
-MAX_RATE_LIMIT=3
+MAX_RATE_LIMIT = 2
+SLIDING_WINDOW_SIZE = 5
