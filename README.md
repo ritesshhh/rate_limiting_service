@@ -1,5 +1,15 @@
 # rate_limiting_service
 
+# set up instruction
+
+1. Install Redis and get it up and running at port 6379
+2. clone project
+3. python3 -m venv venv # create env
+4. source env/bin/activate # activate env
+5. pip install -r requirements.txt
+6. python manage.py runserver # run server on localhost   
+  
+
 # AB testing Results
 
 Rate limit selected - 10 requests/min
