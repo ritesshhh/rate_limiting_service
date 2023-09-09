@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import redis
+from constants import MAX_RATE_LIMIT, SLIDING_WINDOW_SIZE
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -140,5 +141,3 @@ CACHES = {
 }
 
 redis_instance = redis.StrictRedis(host='127.0.0.1', port=6379, db=1)
-MAX_RATE_LIMIT = 10
-SLIDING_WINDOW_SIZE = 60
