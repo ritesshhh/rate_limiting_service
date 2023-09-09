@@ -2,7 +2,7 @@
 
 # set up instruction
 
-1. Install Redis and get it up and running at port 6379
+1. Install Redis and get it up and running at port 6379 (or use docker image : docker run -d -p 6379:6379 --name myredis redis)
 2. clone project
 3. python3 -m venv venv # create env
 4. source env/bin/activate # activate env
