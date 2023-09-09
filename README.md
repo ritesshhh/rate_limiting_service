@@ -4,7 +4,7 @@
 
 Rate limit selected - 10 requests/min
 
-<img width="1270" alt="image" src="https://github.com/ritesshhh/rate_limiting_service/assets/25322700/9ddd7288-57b1-4f26-b3f3-bbb7879d2d2a">
+<img width="1273" alt="image" src="https://github.com/ritesshhh/rate_limiting_service/assets/25322700/7add5ff6-6d4b-4bbf-ab82-0adb9e4db4e8">
 
 Results for rate limiting
 
