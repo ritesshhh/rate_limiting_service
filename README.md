@@ -12,6 +12,7 @@
 
 # AB testing Results
 
+command - ab -n 30 -c 10 -H 'Accept: application/json; indent=4' -H 'Authorization: Basic YWRtaW46YWRtaW4='  'http://127.0.0.1:8000/users/'
 Rate limit selected - 10 requests/min
 
 <img width="1273" alt="image" src="https://github.com/ritesshhh/rate_limiting_service/assets/25322700/7add5ff6-6d4b-4bbf-ab82-0adb9e4db4e8">
