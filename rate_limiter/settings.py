@@ -140,5 +140,5 @@ CACHES = {
 }
 
 redis_instance = redis.StrictRedis(host='127.0.0.1', port=6379, db=1)
-MAX_RATE_LIMIT = 2
-SLIDING_WINDOW_SIZE = 5
+MAX_RATE_LIMIT = 10
+SLIDING_WINDOW_SIZE = 60
