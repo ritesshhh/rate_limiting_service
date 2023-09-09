@@ -7,8 +7,18 @@
 3. python3 -m venv venv # create env
 4. source env/bin/activate # activate env
 5. pip install -r requirements.txt
-6. python manage.py runserver # run server on localhost   
-  
+6. python manage.py migrate
+7. python manage.py createsuperuser --email admin@example.com --username admin # create admin user
+8. python manage.py runserver # run server on localhost
+
+# endpoint
+
+1. use basic auth and provide username and password of admin for this curl request.
+
+<img width="1008" alt="image" src="https://github.com/ritesshhh/rate_limiting_service/assets/25322700/5dc21d31-026c-4cd7-b834-becdf4029c59">
+
+curl --location 'http://127.0.0.1:8000/users/' --header 'Accept: application/json; indent=4' --header 'Authorization: Basic YWRtaW46YWRtaW4='
+
 
 # AB testing Results
 
